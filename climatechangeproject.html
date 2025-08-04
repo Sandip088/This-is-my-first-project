@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Action Together</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f9f1;
+      color: #333;
+    }
+    header {
+      background: #004d00;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+    }
+    #hero {
+      background: #c6f0c2;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin: 10px 0;
+      padding: 0.5em;
+    }
+    button {
+      padding: 0.5em 1em;
+      background: #007a00;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background: #004d00;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Climate Action Together</h1>
+    <nav>
+      <a href="#about">हमारे बारे में</a>
+      <a href="#learn">सीखें</a>
+      <a href="#contribute">योगदान दें</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>जलवायु परिवर्तन को रोकें</h2>
+    <p>अपने सुझाव दें और ज्ञान साझा करें</p>
+    <button onclick="scrollToSection('contribute')">अब योगदान दें</button>
+  </section>
+
+  <section id="about">
+    <h2>हम कौन हैं?</h2>
+    <p>यह वेबसाइट climate change की जानकारी फैलाने और समाधान सुझाने के लिए बनी है</p>
+  </section>
+
+  <section id="learn">
+    <h2>सीखें</h2>
+    <p>वीडियो और PDF रिसोर्स से जानिए कैसे जलवायु परिवर्तन को रोका जा सकता है</p>
+    <!-- यहाँ पर आप resource links जोड़ सकते हैं -->
+  </section>
+
+  <section id="contribute">
+    <h2>अपना सुझाव दें</h2>
+    <form>
+      <input type="text" placeholder="आपका नाम" required>
+      <textarea placeholder="आपका सुझाव..." required></textarea>
+      <button type="submit">सबमिट करें</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Climate Action Team</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
